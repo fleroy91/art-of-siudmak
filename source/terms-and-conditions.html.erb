@@ -1,0 +1,34 @@
+---
+title: Adikteev - Terms and Conditons
+---
+
+<%= partial "section_title", locals: { title: "Terms and Conditons" } %>
+
+<style type="text/css">
+  .hero.is-white a:not(.button) { color: blue; text-decoration: underline;}
+  .hero.is-white a:not(.button):visited { color: purple; }
+  .hero.is-white ul {
+    list-style: circle;
+    text-align: left;
+    padding-left: 50px;
+  }
+</style>
+<!-- Contenu -->
+<section class="mentionslegales has-text-centered">
+  <!-- section 1 -->
+  <div class="hero is-white">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <ul>
+              <li><%= link_to 'Download our terms and conditions (PDF)', 'files/terms_and_conditions/Adikteev_GTC_EN.pdf' %></li>
+              <br />
+              <li><%= link_to 'Téléchargez nos conditions générales de vente (PDF)', 'files/terms_and_conditions/Adikteev_CGV_FR.pdf' %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

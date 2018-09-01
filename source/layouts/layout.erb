@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= current_page.data.title || "Art Of Siudmak" %></title>
+    <link rel="shortcut icon" href="<%= image_path('favicon.ico') %>">
+    <!-- Bulma Version 0.7.1-->
+    <%= stylesheet_link_tag "mstyle" %>
+    <%= stylesheet_link_tag "hero" %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <%= yield_content :stylesheets %>
+</head>
+
+<body>
+  <%= partial "header" %>
+  <%= yield %>
+  <%= partial "footer" %>
+  <%= google_analytics_tag %>
+  <%= yield_content :scripts %>
+  <%= javascript_include_tag "hamburger_menu" %>
+  <%= javascript_include_tag "scroll_to_top_button" %>
+</body>
+
+</html>

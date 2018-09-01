@@ -1,0 +1,23 @@
+<nav class="navbar is-dark">
+    <div class="navbar-brand">
+        <%= link_to image_tag("logo_aos.png", alt: "Art Of Siudmak", width: 200, height: 52, style: "max-height: 52px!important"), "index.html", class: "navbar-item" %>
+        <div class="navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+
+    <div id="navMenu" class="navbar-menu is-pulled-right">
+        <div class="navbar-start">
+            <%= link_to "Home", "index.html", class: "navbar-item" %>
+            <%= link_to "Artist", "artist.html", class: "navbar-item" %>
+            <%= link_to "Gallery", "gallery.html", class: "navbar-item" %>
+            <!-- <%= link_to "Events", "events.html", class: "navbar-item" %> -->
+            <%= link_to "Contact", "contact.html", class: "navbar-item" %>
+        </div>
+    </div>
+</nav>
+

@@ -1,0 +1,35 @@
+<% img_url = remote ? (color ? "https://www.d-print.pl/___Siudmak/gallery_color/#{id}.jpg"
+: "https://www.d-print.pl/___Siudmak/gallery_bw/#{id}.jpg") : "artworks/#{id}.jpg" %>
+<div class="column modal-button" data-target="modal-image">
+  <div class="card is-shady">
+    <div class="card-image">
+      <figure class="image" style="max-height: 357px;">
+        <%= image_tag img_url , alt: title%>
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="content has-text-centered">
+        <h4><%= title %></h4>
+        <p>Limited Edition</p>
+        <span class="button is-link modal-button" data-target="modal-image-<%= id %>">Zoom</span>
+        <span>
+          <%= link_to "Purchase", shop_url, class: "button is-link", target: "_blank" %>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Image modal-->
+<div id="modal-image-<%= id %>" class="modal modal-fx-3dSlit">
+  <div class="modal-background"></div>
+  <div class="modal-content is-huge is-image" style="height: calc(100vh - 50px); width: auto;">
+    <!-- content -->
+    <%= image_tag img_url , alt: title, style: "height: calc(100vh - 80px); width: auto;"%>
+    <!--     <img src="https://source.unsplash.com/zFrUz_tNjCY" alt="placeholder">
+    -->    <!-- end content -->
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+
