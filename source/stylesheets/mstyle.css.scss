@@ -27,3 +27,16 @@ $input-border-color: transparent;
 $input-shadow: none;
 
 @import "bulma/bulma.sass";
+
+.navbar-menu.is-pulled-right.is-active {
+  position: absolute;
+  right:0;
+}
+
+.bg-img {
+  transition: opacity 3s;
+  opacity: 0;
+}
+.bg-img.is-active {
+  opacity: 1;
+}

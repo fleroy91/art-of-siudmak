@@ -2,32 +2,43 @@
 title: Art Of Siudmak - Home
 ---
 
-<section class="hero">
-  <div id="main_banner" class="content has-text-centered" style="transition: background 1s linear;background-image: url('https://www.d-print.pl/___Siudmak/gallery_color/K38-statua-1160x1430.jpg');background-position: center; background-size: cover; min-height: 88vh">
-    <p class="title is-huge has-text-white" style="margin-top: 20vh; font-size: 350%;">Art of</p>
-    <p class="title is-huge has-text-white" style="margin-top: 25vh; font-size: 400%; margin-top: -3vh;">SIUDMAK</p>
+<section class="hero is-dark">
+  <%= partial "bg_image", { locals: { id: 1, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K38-statua-1160x1430.jpg' }} %>
+  <%= partial "bg_image", { locals: { id: 2, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K20-medrzec-820x905.jpg' }} %>
+  <%= partial "bg_image", { locals: { id: 3, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K08-Idylla_MK-820x820-AKCEPT.jpg' }} %>
+  <%= partial "bg_image", { locals: { id: 4, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K12-Chwila-bezruchu-820x1010.jpg'}} %>
+  <%= partial "bg_image", { locals: { id: 5, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K11-Zloty-Jezdziec-820x1010.jpg' }} %>
+  <%= partial "bg_image", { locals: { id: 6, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K38-statua-1160x1430.jpg' }} %>
+  <%= partial "bg_image", { locals: { id: 7, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K52-Fantomatyczny-Zaglowiec_491x613.jpg' }} %>
+  <%= partial "bg_image", { locals: { id: 8, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K83-PAPIER-APARS-488x651.jpg'  }} %>
+  <%= partial "bg_image", { locals: { id: 9, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K53-Galaz-Zycia_492x612.jpg'}} %>
+  <%= partial "bg_image", { locals: { id: 10, src: 'https://www.d-print.pl/___Siudmak/gallery_color/K34-nici-losu-1020x1320.jpg' }} %>
+
+  <div class="content has-text-centered" style="width:100%;left:0;position:absolute;margin-top:52px;float:left;">
+    <%= image_tag "logo_aos.png", style: "margin-top:10vh;max-width:500px;width: 55%" %>
     <div>
-      <p class="subtitle is-large has-text-white" style="font-size:200%; margin-bottom:0; "><i>"... We are such stuff as dreams are made of ..."</i></p>
-      <p class="is-small has-text-white"><i>William Shakespeare</i></p>
+      <p class="subtitle is-large" style="color: #c2a96e; font-size:200%; margin-bottom:0; "><i>"... We are such stuff as dreams are made of ..."</i></p>
+      <p class="is-small" style="color: #c2a96e; "><i>William Shakespeare</i></p>
     </div>
     <div style="margin-top:5vh">
       <span>
         <a href="https://www.facebook.com/siudmak.shop/" target="_blank">
-            <i class="fab fa-facebook-square fa-2x has-text-white"></i>
+            <i class="fab fa-facebook-square fa-2x" style="color:#c2a96e"></i>
         </a>
       <span>
       <span>
       <a href="https://twitter.com/ASiudmak" target="_blank">
-          <i class="fab fa-twitter-square fa-2x has-text-white"></i>
+          <i class="fab fa-twitter-square fa-2x" style="color:#c2a96e"></i>
       </a>
       </span>
       <span>
       <a href="https://www.instagram.com/siudmak_official/" target="_blank">
-          <i class="fab fa-instagram fa-2x has-text-white"></i>
+          <i class="fab fa-instagram fa-2x" style="color:#c2a96e"></i>
       </a>
       </span>
     </div>
   </div>
+  <div style="height:88vh;"></div>
 </section>
 
 <%= javascript_include_tag "switch_bg" %>
