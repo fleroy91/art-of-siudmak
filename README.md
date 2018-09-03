@@ -1,4 +1,4 @@
-# Official website
+# Art-of-siudmak
 Production environment: [link](http://www.adikteev.com)
 
 Development environment: [link](http://beta.adikteev.com)
@@ -6,23 +6,20 @@ Development environment: [link](http://beta.adikteev.com)
 # How to build ?
 
 ```
-middleman build
+./build.sh
+```
+
+# How to test ?
+
+```
+./start.sh
 ```
 
 # How to deploy ?
 
-First deploy to beta
+It send all the files to the FTP of console.net.
 ```
-./deploy.sh beta
-```
-Then deploy to prod
-```
-./deploy.sh prod
+./deploy.sh
 ```
 
-# How to empty the CDN cache ?
 
-Ask Devops team to empty the cache on production.
-Vincent Leraitre vincentl@adikteev.com
-
-# art-of-siudmak
